@@ -1,0 +1,90 @@
+[
+    {
+        "image":"./images/kalki.jpg",
+        "title" :"Kalki 2893 AD",
+        "Description" :"A Modern Avatar of the Hindu God Vishnu, Is said to have descended on Earth to protect the world from evil forces."
+    },
+    {
+        "image":"./images/hanuman.jpeg",
+        "title" :"Hanu-Man",
+        "Description" :"In the Tranquil village of Anjanadri, a pretty thief stumbles upon Hanuman-like abilities.With the impending threats, He rises to become the hero they need."
+    },
+   
+    {
+        "image":"./images/pushpa.jpg",
+        "title" :"Pushpa 2: The Rule",
+        "Description" :"The rule is a pan-indian action crime thriller movie written and directed by Sukumar. Allu Arjun, rashmika Mandanna, and Fahadh Faasil starred in the lead roles."
+    },
+    {
+        "image":"./images/majaka.webp",
+        "title" :"Majaka",
+        "Description" :"Majaka is a Telugu romantic comedy entertainer movie directed by Thrinadha Rao Nakkina. The film features Sundeep Kishan in the lead role."
+    },
+    {
+        "image":"./images/viswam.jpg",
+        "title" :"Viswam",
+        "Description" :"Viswam is a telugu action entertainer movie directed by Sreenu Vaitla. The movie casts Gopichand and Kavya Thapar in the main lead roles."
+    },
+    {
+        "image":"./images/nandamurimokshagna.webp",
+        "title" :"Nandamuri",
+        "Description" :"Nandamuri Mokshagna Teja's debut movie was written and directed by Prasanth Varma. The movie casts Nandamuri Mokshagna Teja in the main lead role."
+    },
+    {
+        "image":"./images/devara.jpeg",
+        "title" :"Devara: Part1",
+        "Description" :"Devara: Part 1 is a 2024 Indian Telugu-language action drama film written and directed by Koratala Siva and jointly produced by Yuvasudha Arts and N.T.R.Arts."
+    },
+    {
+        "image":"./images/Eagle.webp",
+        "title" :"Eagle",
+        "Description" :"A journalist uncovers the story of a ruthless assassin when she investigates a government cover up."
+
+    },
+     {
+        "image":"./images/zebra.webp",
+        "title" :"Zebra",
+        "Description" :"Zebra is a Telugu action drama movie directed by EashvarKarthik. The film casts Satya Dev, Daali Dhananjaya, Priya Bhavani, and Jennifer Piccinato, in the main lead roles."
+    }, 
+    {
+        "image":"./images/hit.webp",
+        "title" :"Hit:The 3rd Case",
+        "Description" :"Hit:The 3rd Case is a Telugu action Thriller movie directed by Dr. Sailesh Kolanu. The movie casts Nani in the main lead role."
+    },
+    {
+        "image":"./images/maharaja.jpg",
+        "title" :"Maharaja",
+        "Description" :"A barber seeks vengeance after his home is burglarized, telling police his lakshmi has been taken."
+    },
+    {
+       
+        "image":"./images/shahkot.jpeg",
+        "title" :"Shahkot",
+        "Description" :"The movie is directed by Rajiv Dhingra and will feature Guru Randhawa, Isha Talwar and Raj Babbar as lead characters."
+
+    },
+    {
+       
+        "image":"./images/aa21.jpeg",
+        "title" :"AA 21",
+        "Description" :"AA 21 is a action thriller movie directed by Siva Koratala. The movie casts Allu Arjun in the main lead roles. The film is produced by Sudhakar Mikkilineni."
+    },
+    {
+       
+        "image":"./images/maha prastanam.jpeg",
+        "title" :"Maha Prastanam",
+        "Description" :"Maha Prasthanam is an upcoming Telugu movie. The movie is directed by Jhony and will feature Tanish Alladi as lead character."
+    },
+    {
+       
+        "image":"./images/lucky.jpeg",
+        "title" :"Lucky Bhaskar",
+        "Description" :"Lucky Baskhar is an upcoming Indian Telugu-language drama thriller film written and directed by Venky Atluri. The film is produced by S. Naga Vamsi and Sai Soujanya. "
+    },
+    {
+
+        "image":"./images/kraven.jpeg",
+        "title" :"Kraven the Hunter",
+        "Description" :"Kraven's complex relationship with his ruthless father starts him down a path of vengeance"
+    }
+]

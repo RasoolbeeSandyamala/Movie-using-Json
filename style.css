@@ -1,0 +1,88 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#main{
+  display: flex;
+ max-width: 100%;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-left: 12px;
+  margin-right: 12px;
+  background-color: black;
+}
+#main h1{
+  font-weight: bolder;
+  color: whitesmoke;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding: 10px;
+  font-size: 60px;
+  text-shadow: 1px 2px 3px red,4px 5px 10px red,10px 20px 30px red;
+}
+#main h1:hover{
+  color: gold;
+}
+#main form{
+  display: flex;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  padding: 10px;
+}
+#main form input{
+  max-width: 100%;
+margin-right: 3px;
+border-radius: 5px;
+}
+#cardscontainer{
+  display: flex;
+ max-width: 100%;
+  flex-wrap: wrap;
+  gap: 10px;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  background-color: black;
+  margin-left: 12px;
+  margin-right: 12px;
+}
+#cardscontainer div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 300px;
+  height: 420px;
+  gap: 20px;
+box-shadow: 0px 2px 2px red,2px 2px 5px red,1px 2px 3px red;
+transition: 0.5s ease-in-out;
+}
+#cardscontainer div:hover{
+  border: 2px solid yellowgreen;
+}
+#cardscontainer div img{
+  width: 250px; 
+  height: 200px;
+  transition: 0.3s ease;
+}
+#cardscontainer div img:hover{
+  border: 2px solid orangered;
+}
+#cardscontainer div h3{
+  color: whitesmoke;
+  font-weight: 800;
+  font-size: 25px;
+  text-shadow: 1px 2px 3px red,4px 5px 10px red,10px 20px 30px red;
+}
+#cardscontainer div p{
+  color:  white;
+  text-shadow: 0px 0px 1px greenyellow,1px 2px 1px green,1px 2px 3px greenyellow;
+  margin-left: 10px;
+}
+.navbar{
+  background-color: black;
+}

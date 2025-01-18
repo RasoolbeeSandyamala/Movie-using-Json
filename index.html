@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="shortcut icon" href="./images/movies-icon-png-8.jpgs" type="image/x-icon">
+    <title>Movie website using Json data</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+         .container1{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            max-width: 100%;
+            margin-left: 12px;
+            margin-right: 12px;
+            padding: 20x;
+        }
+         span{
+            margin-left: 20px;
+            color: red;
+            font: 1em sans-serif;
+        }
+        p{
+            margin-top: 5px;
+            margin-bottom: 45px;
+            font-size: 20px;
+        }
+        h2{
+          color: red;  
+          font-size: 35px;
+          margin-top: 5px;
+          text-shadow: 0px 0px 2px greenyellow,0px 3px 2px greenyellow;
+        }
+        h1{
+            text-shadow: 0px 3px 5px orangered,0px 3px 2px orangered; 
+            font-size: 40px;
+            padding: 15px;
+            margin-top: -60px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+            <div class="container-fluid me-5 ms-5 mt-2">
+              <a class="navbar-brand" href="#"><img src="./images/movies-icon-png-8.jpg" alt="" width="50px" height="50px" style="border: 5px solid white; border-radius: 25px;"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2">
+                  <li class="nav-item">
+                    <a class="nav-link  text-white " aria-current="page" >Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link  text-white-50" href="" onclick="alert('Please login to move for movies')" >Movies</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                <a href="./login.html"><button class="btn btn-outline-light me-3" type="button">Login</button></a>
+                <a href="./signup.html"><button class="btn btn-outline-light me-3" type="button">Signup</button></a>
+                  <!-- <button class="btn btn-outline-light" type="submt">Signup</button> -->
+                </form>
+              </div>
+            </div>
+          </nav>
+          
+    </div>
+    
+     <div class="container1 bg-dark text-white p-5">
+    <h1> About Telugu Movies</h1>
+    <h2>Guntur Kaaram</h2>
+    <p>Mahesh Babu's Guntur Kaaram is one of the most anticipated films of 2024. Directed by Trivikram Srinivas, this action-packed entertainer promises to deliver powerful dialogues, intense action scenes, and Mahesh Babu in a larger-than-life role. Alongside him, Sreeleela and Meenakshi Chaudhary add star power to the film. Known for his ability to balance mass appeal with family drama, Trivikram is expected to bring a mix of high-voltage entertainment and emotional depth to this film, set against a vibrant backdrop. The music, composed by Thaman S, adds energy and excitement to the narrative.</p>
+    <h2>Saindhav</h2>
+    <p>Starring Venkatesh in the lead, Saindhav is a gripping action thriller. Directed by Sailesh Kolanu, the movie also features Bollywood actor Nawazuddin Siddiqui and Shraddha Srinath in pivotal roles. Venkatesh plays a dynamic character in a tale filled with crime, vengeance, and intense drama. Set in a dark, suspenseful atmosphere, Saindhav stands out for its unique storyline and strong performances. The inclusion of Nawazuddin Siddiqui, a notable actor from Bollywood, adds further intrigue to the narrative, blending Southern and Northern film industries.</p>
+    <h2>Naa Saami Ranga</h2>
+    <p>Naa Saami Ranga brings together Nagarjuna Akkineni and Allari Naresh in an action entertainer that appeals to mass audiences. Directed by debutant Sridhar Reddy, the film follows a story of revenge and loyalty, where Nagarjuna's character faces formidable challenges. Allari Naresh plays a significant role, adding layers of emotion and humor to the film. With strong action sequences and a compelling storyline, this movie aims to be a hit among fans of Nagarjuna's action-oriented films. The film's blend of intense action and family drama is expected to connect well with audiences.</p>
+    <h2>Pushpa 2: The Rule </h2>
+    <p>The sequel to the blockbuster Pushpa: The Rise, Pushpa 2: The Rule continues the journey of Allu Arjun's character as he navigates the complex world of red sandalwood smuggling. Directed by Sukumar, the film has raised high expectations with its larger-than-life portrayal of a rugged anti-hero who refuses to back down. Rashmika Mandanna reprises her role as Srivalli, and Fahadh Faasil's villainous character adds tension to the narrative. With stunning visuals, intense drama, and a powerful storyline, Pushpa 2 is set to be one of the biggest Telugu releases of 2024, with fans eagerly awaiting its action-packed sequences and memorable dialogues.</p>
+    <h2>Kalki 2898 Ad</h2>
+    <p>Kalki 2898 AD, a sci-fi extravaganza, stars Prabhas alongside Deepika Padukone, marking one of the most ambitious projects in Indian cinema. Directed by Nag Ashwin, this futuristic film promises to take viewers on a journey through time and space, set in a distant future where technology and mythology blend seamlessly. Prabhas plays a larger-than-life character in a visually stunning world, with Deepika Padukone's character adding depth and intrigue. With extraordinary special effects and a high-budget production, Kalki 2898 AD is poised to be a groundbreaking film, pushing the boundaries of Telugu and Indian cinema.
+    </p>
+    <h1>Movie Updates</h1>
+    <p> 1. Swag     <span>  oct 04 2024</span></p>
+    <p>2.Roti Kapda Romance <span>Oct 04 2024</span>	</p>
+    <p>3.Ramnagar Bunny <span>Oct 04 2024</span> </p>
+    <p>4. Dakshina <span>Oct 04 2024</span>	</p>
+    <p>5. Vettaiyan (Telugu Dub) <span>Oct 10, 2024</span>	</p>
+    <p>6.Viswam <span>Oct 11, 2024</span>	</p>
+    <p>7.Martin (Telugu Dub)	<span> Oct 11, 2024</span></p>
+    <p>8.Janaka Aithe Ganaka  <span>Oct 12, 2024</span>	</p>
+    <p>9.Mechanic Rocky <span>Oct 31, 2024</span>	</p>
+    <p>10.Lucky Baskhar <span>Oct 31, 2024</span>	</p>
+    <p>11.Amaran (Telugu Dub) <span>Oct 31, 2024</span>	</p>
+    <p>12. Zebra<span>oct 31,2024</span></p>
+    <p>13.UI(Telugu Dub)<span>oct 2024</span></p>
+    <p>14.Matka<span>nov14,2024</span></p>
+    <p>15.Kanguva (Telugu Dub)<span>Nov 14, 2024</span></p>
+    <p>16.Pushpa 2 The Rule<span>Dec 06, 2024</span></p>
+    <p>17.BrahmaAnandam<span>Dec 06, 2024</span></p>
+    <p>18.Game Changer<span>Dec 20, 2024</span></p>
+    <p>19.Robinhood<span>Dec 20, 2024</span></p>
+    <p>20.Thandel<span>Dec 20, 2024</span></p>
+    <p>21.Vidudala Part2<span>Dec 20, 2024</span></p>
+    <p>22.Kannappa<span>In 2024</span></p>
+    <p>23.#NBK109<span>In 2024</span></p>
+    <p>25.OG<span>In 2025</span></p>
+    <p>26.Goodachari 2<span>In 2025</span></p>
+    <p>27.Vishwambhara<span>Jan 10, 2025</span></p>
+    <p>28.Good Bad Ugly (Telugu Dub)<span>Pongal 2025</span></p>
+    <p>29.Majaka<span>Sankranthi 2025</span></p>
+    <p>30.Laila<span>Feb 14 2025</span></p>
+    <p>31.Han Hara Veera Mallu<span>march 28,2025</span></p>
+    <p>32.VD 12<span>March 28,2025</span></p>
+    <p>33.The Raja Saab<span>April 10,2025/span></p>
+    <p>34.Mirai<span>April 18, 2025</span></p>
+    <p>35.Hit 3<span>May 01,2025</span></p>
+    <p>NTR 31<span>Jan 09,2026</span></p>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
