@@ -1,50 +1,125 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Movies</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css" class="css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" class="css" />
   </head>
   <body>
     <div class="container-fluid">
       <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
-          <div class="container m-auto">
-            <a class="navbar-brand" href="#"><img src="./images/movies-icon-png-8.jpg" alt="" width="50px" height="50px" style="border: 5px solid white; border-radius: 25px;"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2">
-                <li class="nav-item">
-                  <a class="nav-link  text-white-50 " aria-current="page" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link  text-white" href="movie.html">Movies</a>
-                </li>
-              </ul>
-              <form class="d-flex" role="search">
-               <p id="user" class=" fs-6 me-3 my-auto  text-white "></p>  
-                <button class="btn btn-outline-light" type="submt">Signup</button>
-              </form>
-            </div>
+        <div class="container m-auto">
+          <a class="navbar-brand" href="#"
+            ><img
+              src="./images/movies-icon-png-8.jpg"
+              alt=""
+              width="50px"
+              height="50px"
+              style="border: 5px solid white; border-radius: 25px"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2">
+              <li class="nav-item">
+                <a
+                  class="nav-link text-white-50"
+                  aria-current="page"
+                  href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="movie.html">Movies</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search" id="movieSearchForm">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search movies..."
+                aria-label="Search"
+                id="movieSearchInput"
+                style="width: 250px"
+              />
+              <p id="user" class="fs-6 me-3 my-auto text-white"></p>
+              <button class="btn btn-outline-light" type="submt">Signup</button>
+            </form>
           </div>
-        </nav>
-        
-  </div>
-    <div id="main">
-      <h1>Movies </h1>
-      <form action="">
-        <input type="text">
-        <a href="Text.html"class="btn btn-light" role="button" style="font-size: 20px;color: orangered;">search</a>
-      </form>
+        </div>
+      </nav>
     </div>
-      <div id="cardscontainer">
-      </div>
-    <script src="script.js">
-       
+    <div class="movie-detail-container" id="movieDetail">
+      <!-- Movie details will be loaded here -->
+    </div>
+    <script>
+      // Get movie data from sessionStorage
+      const movie = JSON.parse(sessionStorage.getItem("selectedMovie"));
+      const container = document.getElementById("movieDetail");
+      if (movie) {
+        container.innerHTML = `
+              <img src="${movie.image}" alt="${movie.title}">
+              <h2>${movie.title}</h2>
+              <p>${movie.description}</p>
+              <a href="search.html" class="back-btn">Back to Search</a>
+          `;
+      } else {
+        container.innerHTML = "<p>No movie selected.</p>";
+      }
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <style>
+      .movie-detail-container {
+        max-width: 500px;
+        margin: 40px auto;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 2px 12px #ccc;
+        padding: 30px;
+        text-align: center;
+      }
+      .movie-detail-container img {
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+        border-radius: 8px;
+      }
+      .movie-detail-container h2 {
+        margin: 20px 0 10px 0;
+      }
+      .movie-detail-container p {
+        font-size: 18px;
+      }
+      .back-btn {
+        margin-top: 20px;
+        padding: 8px 20px;
+        background: #222;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    </style>
+    <script src="script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
